@@ -29,7 +29,7 @@ pascirc=[2,2,2];
 pressang=[20,20,20];
 // Etage 0 = 5mm avec serrage par vis
 // Etage 1 = 4mm avec engrenage de 10x4 sans serage par vis
-// Etage 1 = 6mm avec serrage par vis
+// Etage 2 = 6mm avec serrage par vis
 // Implicitement : Le pignon d'entrée et de sortie n'ont qu'un seul étage
 // entrée : qu'un étage bas
 // sortie : qu'un étage haut
