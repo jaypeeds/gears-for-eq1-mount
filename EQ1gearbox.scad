@@ -18,10 +18,6 @@ use <gearbox/gearbox.scad>
 // a : angles relatifs des centres d'étage
 // stage1_c1 : centre de l'engrenage entraîneur
    
-// Reporter ensuite ces angles dans Fusion360
-//entraineurs = [25, 25];
-//entraines = [75, 125];
-//L'axe 1 est sur roulement de phi 10 ext. 4 de hauteur
 
 // pas circulaire = nombre de mm par dent
 pascirc=[2,2,2];
@@ -37,8 +33,7 @@ pressang=[20,20,20];
 // hphaut = [ étage1, étage 2, ... étage n-1, sortie ]
 hpbase = [ 15, 7.5]; hphaut = [ 7.5, 7.5];
 // Percements Moteur, axe intermédiare, axe sortie
-axbase = [5, 4, 6.5]; 
-axhaut = [5, 4, 6.5];
+axbase = [5, 4]; axhaut = [4, 6.5];
 // En gros au départ angles = [60, -40]
 // C0 est en (0,0) c'est l'axe moteur
 // L'angle (C1,C0,C2) est de 60° 
@@ -49,6 +44,8 @@ axhaut = [5, 4, 6.5];
 // Le moteur doit donc tourner à 4 x 15 = 60 trs/h = 1 tr/mn
 // Après approximation par dichotomie, la valeur d'angle est :
 angles = [60, -35.2645]; 
+// Reporter ensuite ces angles dans Fusion360
+
 // Nombres de dents
 entraineurs = [25,25];
 entraines = [75,125];
@@ -92,6 +89,7 @@ n = 3;
 r = base_dia / 4.0;
 vis_dia = 3;
 axe_dia = 5;
+// Roulement de phi 10 ext. 4 de hauteur
 roulmt_dia = 10;
 roulmt_h = 4;
 
